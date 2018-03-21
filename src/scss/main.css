@@ -1,0 +1,9 @@
+body {
+  background-color: #3C249C;
+  color: #fff;
+  padding: 2em; }
+
+p {
+  color: #700;
+  display: flex;
+  font-size: 1.2em; }

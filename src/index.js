@@ -1,4 +1,4 @@
-import './css/main.css';
+//import './css/main.css';
 import './scss/main.scss';
 import {hello, sup, inc} from './js/module';
 
