@@ -13,3 +13,13 @@ function sup() {
 const inc = (x)=>x+3;
 
 export {hello, sup, inc};
+
+function capLettre(string){
+    
+    //if(typeof string === "string"){
+       console.log("string passée dans capLettre() : " + string);
+       return string.charAt(0).toUpperCase() + string.slice(1);
+       
+     //}
+     
+}
