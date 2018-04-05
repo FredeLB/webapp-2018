@@ -3,6 +3,7 @@ import './scss/main.scss';
 
 //Importer la librairie dans node_modules
 import moment from 'moment';
+import 'moment/locale/fr';
 
 //importer {hello, sup, inc} from './js/module';
 import * as outils from './js/module';
@@ -12,7 +13,7 @@ import Dog from './js/dog';
 
 //Importer ma classe meteo
 //import Meteo from './js/meteoclassbase';
-import Meteo from './js/meteoclassinfoshandlebars';
+import Meteo from './js/meteoclassinfoshandlebarsparam';
 
 
 
