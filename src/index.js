@@ -40,8 +40,7 @@ console.log(leChien.jappe());*/
 
 /* ------------------------- Date moment ---------------------------- */
 
-var containerDate = document.querySelector('.date');
-var maintenant = moment();
+const containerDate = document.querySelector('.date'), maintenant = moment();
 
 
 function dateDuJour() {
@@ -51,21 +50,34 @@ function dateDuJour() {
     containerDate.innerHTML = maintenant.format('LLLL');
 }
 
-dateDuJour();
 
 
 
 //-------------------- CLASS MÉTÉO -------------
 
+function meteoDuJour(){
 
-const infosMeteo = {
-    "villeID":"6325494",
-    "units":"metric",
-    "langue": "fr"
-};
+    const infosMeteo = {
+        "villeID":"6325494",
+        "units":"metric",
+        "langue": "fr"
+    };
 
-const maMeteo = new Meteo(infosMeteo);
+    const maMeteo = new Meteo(infosMeteo);
+    const msgMeteo = maMeteo.getMeteoInformations();
 
-console.log(maMeteo.getMeteoInformations());
+    console.log(msgMeteo);
+    
+}
 
+
+
+//----------------------INIT---------------
+
+$(document).ready(function(){
+    
+    dateDuJour();
+    meteoDuJour();
+    
+});
 
