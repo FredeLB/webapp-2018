@@ -9,7 +9,7 @@ class Meteo {
 
   constructor(infos) {
     this.infos = infos;
-      //console.log("infos : " + this.infos.villeID);
+      console.log("infos : " + this.infos.langue);
   }
 
   getMeteoInformations(infos) {
