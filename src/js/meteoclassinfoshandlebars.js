@@ -17,6 +17,7 @@ class Meteo {
       var maClef = "2cd6bf235d84658ce11b3b2fc2d0bc77";
       var maLangue = this.infos.langue;
       var maRequete = 'http://api.openweathermap.org/data/2.5/weather?id=' + this.infos.villeID + '&units=' + this.infos.units + '&lang=' + maLangue + '&APPID=' + maClef;
+      
     
     // ----------------------- OPENWEATHERMAP -----------------------
     $.ajax({

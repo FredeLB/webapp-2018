@@ -17,6 +17,7 @@ class Meteo {
       var maClef = "2cd6bf235d84658ce11b3b2fc2d0bc77";
       var maLangue = this.infos.langue;
       var maRequete = 'http://api.openweathermap.org/data/2.5/weather?id=' + this.infos.villeID + '&units=' + this.infos.units + '&lang=' + maLangue + '&APPID=' + maClef;
+      console.log(maRequete);
     
     // ----------------------- OPENWEATHERMAP -----------------------
     $.ajax({
@@ -82,7 +83,7 @@ class Meteo {
       
       const template = Handlebars.compile(source);
       
-      const context = { "ville": data.name, "temperature": data.main.temp, "humidite": data.main.humidity + "%", "tendance": tendance, "imagemeteo": imgsource };
+      const context = { "ville": data.name, "temperature": data.main.temp + " °C", "humidite": data.main.humidity + "%", "tendance": description, "imagemeteo": imgsource };
       
       const result = template(context);
       
